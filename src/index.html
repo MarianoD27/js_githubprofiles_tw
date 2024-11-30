@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js"></script>
+  <title>GitHub Profile Search</title>
+</head>
+
+<body class="min-w-[200px] min-h-screen bg-gradient-to-r from-emerald-500 to-emerald-900 m-3 my-8 text-white">
+  <h1 class="text-5xl text-center tracking-tight">GitHub Profile Search</h1>
+
+  <div class="mt-10 bg-white flex items-center justify-between rounded-xl max-w-[500px] mx-auto">
+    <input id="search-input" type="text" placeholder="Search..."
+      class="text-black focus:outline-none bg-transparent text-3xl p-1 rounded-xl" />
+    <button id="search-btn" class="bg-orange-600 hover:bg-orange-500 active:bg-orange-400 text-3xl p-1 rounded-xl">
+      Search
+    </button>
+  </div>
+  <p id="error" class="text-red-800 mt-8 p-3 text-center font-semibold">
+    asdfafwewfads
+  </p>
+
+  <div id="show-user"
+    class="bg-gradient-to-r from-blue-800 to-indigo-900 rounded-xl p-7 flex flex-col justify-center items-center w-[80%] mx-auto gap-4">
+    <img id="user-img" src="" alt="user-img" class="w-[300px] rounded-xl" />
+    <h1 class="text-3xl">Name: <span id="user-name"></span></h1>
+    <h1 class="text-3xl">User Name: <span id="user-login"></span></h1>
+
+    <h1 class="text-xl">Biography: <span id="user-bio"></span></h1>
+
+    <row class="flex justify-around bg-slate-700 w-[70%] rounded-xl p-4 text-center text-xl">
+      <div class="flex flex-col leading-relaxed">
+        <p>Repositories</p>
+        <span id="user-repos"></span>
+      </div>
+
+      <div class="flex flex-col leading-relaxed">
+        <p>Followers</p>
+        <span id="user-followers"></span>
+      </div>
+    </row>
+
+    <a id="user-html" href=""
+      class="bg-cyan-600 hover:bg-cyan-500 active:bg-cyan-400 px-4 py-2 border border-blue-600 rounded-xl font-semibold text-xl">Visit
+      Profile</a>
+  </div>
+</body>
+
+</html>
